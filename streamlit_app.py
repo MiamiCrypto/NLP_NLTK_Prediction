@@ -6,7 +6,7 @@ import pickle
 with open('nlp.pkl', 'rb') as file:
     model = pickle.load(file)
 
-model = pickle.load('nlp.plk')
+#model = pickle.load('nlp.plk')
 #model = joblib.load('text_clf_model.joblib')
 
 # Function to predict text and get score
