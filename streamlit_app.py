@@ -19,7 +19,7 @@ def predict_text_with_score(model, text):
 
 # Streamlit user interface
 st.markdown("<h1 style='text-align: center;'>Text Prediction App</h1>", unsafe_allow_html=True)
-st.title('Text Prediction App')
+#st.title('Text Prediction App')
 st.image("Thinking Brain.png", caption='Flight by machines heavier than air is unpractical and insignificant, if not utterly impossible.', width=250)
 user_input = st.text_area("Enter text here:")
 if st.button('Predict'):
