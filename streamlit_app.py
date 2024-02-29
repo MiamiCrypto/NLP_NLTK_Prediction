@@ -19,7 +19,7 @@ def predict_text_with_score(model, text):
 
 # Streamlit user interface
 st.title('Text Prediction App')
-st.image("./header.png")
+st.image("Thinking Brain.png")
 user_input = st.text_area("Enter text here:")
 if st.button('Predict'):
     prediction, scores = predict_text_with_score(model, user_input)
