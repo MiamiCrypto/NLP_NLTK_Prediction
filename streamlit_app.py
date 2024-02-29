@@ -1,8 +1,11 @@
 import streamlit as st
-import pickle 
-#import joblib
+import pickle
 
 # Load the model
+# Load the model from a pickle file
+with open('nlp.pkl', 'rb') as file:
+    model = pickle.load(file)
+
 model = pickle.load('nlp.plk')
 #model = joblib.load('text_clf_model.joblib')
 
