@@ -18,7 +18,7 @@ def predict_text_with_score(model, text):
     return prediction[0], proba_scores
 
 # Streamlit user interface
-st.title('Text Classification App')
+st.title('Text Prediction App')
 user_input = st.text_area("Enter text here:")
 if st.button('Predict'):
     prediction, scores = predict_text_with_score(model, user_input)
