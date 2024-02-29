@@ -3,7 +3,7 @@ import streamlit as st
 #import joblib
 
 # Load the model
-model = pickle.load('nlp
+model = pickle.load('nlp.plk')
 #model = joblib.load('text_clf_model.joblib')
 
 # Function to predict text and get score
