@@ -24,7 +24,7 @@ st.markdown("<h1 style='text-align: center;'>Text Prediction App</h1>", unsafe_a
 
 # Center the image by adjusting the weights of the columns
 # Increase the weight of the center column if necessary
-col1, col2, col3 = st.columns([1, 6, 1])
+col1, col2, col3 = st.columns([1, 10, 1])
 with col2:
     st.image("Thinking Brain.png", caption='Flight by machines heavier than air is unpractical and insignificant, if not utterly impossible.', width=250)
 
