@@ -1,4 +1,4 @@
-# 📦 Streamlit App Starter Kit 
+# 📦 Streamlit Text Classification App
 ```
 ⬆️ (Replace above with your app's name)
 ```
