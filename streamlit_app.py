@@ -9,6 +9,8 @@ with open('nlp.pkl', 'rb') as file:
 #model = pickle.load('nlp.plk')
 #model = joblib.load('text_clf_model.joblib')
 
+st.color_picker("Pick a color")
+
 # Function to predict text and get score
 def predict_text_with_score(model, text):
     prediction = model.predict([text])
