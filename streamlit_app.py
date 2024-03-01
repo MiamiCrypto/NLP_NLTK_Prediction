@@ -43,7 +43,7 @@ if st.button('Predict'):
         # Create a progress bar and fill it as the prediction is being made
     with st.empty():
         for percent_complete in range(100):
-            time.sleep(0.019)  # Sleep for a short moment to simulate work being done
+            time.sleep(0.01)  # Sleep for a short moment to simulate work being done
             st.progress(percent_complete + 1)
     prediction, scores = predict_text_with_score(model, user_input)
     st.write("Predicted class:", prediction)
