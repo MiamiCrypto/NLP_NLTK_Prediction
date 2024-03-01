@@ -26,7 +26,7 @@ st.markdown("<h1 style='text-align: center;'>Text Prediction App</h1>", unsafe_a
 # Increase the weight of the center column if necessary
 col1, col2, col3 = st.columns([1, 1, 1])
 with col2:
-    st.image("Thinking Brain.png", caption='Predict the Industry', width=250)
+    st.image("Thinking Brain.png", caption='Powered by Ai', width=250)
     
 st.write("Make sure the text is not too short. Models often need a certain amount of context to make accurate predictions.")
 #st.write("Most objects") # df, err, func, keras!
