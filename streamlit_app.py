@@ -25,7 +25,7 @@ def predict_text_with_score(model, text):
     return prediction[0], proba_scores
 
 # Streamlit user interface
-st.header("<h1 style='text-align: center;'>This Application Predicts What the Text is About</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center;'>This Application Predicts What the Text is About</h1>", unsafe_allow_html=True)
 
 # Center the image by adjusting the weights of the columns
 # Increase the weight of the center column if necessary
