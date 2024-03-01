@@ -40,7 +40,7 @@ st.write("Make sure the text is not too short. Models often need a certain amoun
 col3.metric(label="Temperature", value="60 *C", delta="3 *C")
 
 #with col1:
-    st.color_picker("Pick a color")
+    #st.color_picker("Pick a color")
 #st.write("Most objects") # df, err, func, keras!
              
 # User input text area
