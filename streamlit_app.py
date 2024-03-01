@@ -10,7 +10,6 @@ with open('nlp.pkl', 'rb') as file:
 #model = pickle.load('nlp.plk')
 #model = joblib.load('text_clf_model.joblib')
 
-#st.color_picker("Pick a color")
 #st.area_chart(df)
 #st.bar_chart(df)
 #st.line_chart(df)
@@ -37,6 +36,9 @@ with col2:
     st.image("Thinking Brain.png", caption='Powered by Ai', width=250)
     
 st.write("Make sure the text is not too short. Models often need a certain amount of context to make accurate predictions.")
+
+with col1:
+    st.color_picker("Pick a color")
 #st.write("Most objects") # df, err, func, keras!
              
 # User input text area
