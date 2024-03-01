@@ -55,15 +55,6 @@ if st.button('Predict'):
     st.write("Predicted class:", prediction)
     st.write("Probability Scores:", scores)
 
-
-# When the 'Predict' button is pressed
-if st.button('Predict'):
-    # Create a progress bar and fill it as the prediction is being made
-    with st.empty():
-        for percent_complete in range(100):
-            time.sleep(0.05)  # Sleep for a short moment to simulate work being done
-            st.progress(percent_complete + 1)
-
 # Create a placeholder for the progress bar
 #progress_bar_placeholder = st.empty()
 
