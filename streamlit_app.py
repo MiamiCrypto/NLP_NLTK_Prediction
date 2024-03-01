@@ -1,19 +1,29 @@
 import streamlit as st
 import pickle
-import streamlit_extras
 
 # Load the model
 # Load the model from a pickle file
 with open('nlp.pkl', 'rb') as file:
     model = pickle.load(file)
 
-from streamlit_extras.let_it_rain import rain
-rain(
-    emoji="🐐",
-    font_size=54,
-    falling_speed=5,
-    animation_length="infinite",
-)
+from .. import extra
+
+@extra
+def rain(
+    emoji: str,
+    font_size: int = 64,
+    falling_speed: int = 5,
+    animation_length: Union[int, str] = "infinite",
+):
+    """
+    Creates a CSS animation where input emoji falls from top to bottom of the screen.
+
+    Args:
+        emoji (str): Emoji
+        font_size (int, optional): Font size. Defaults to 64.
+        falling_speed (int, optional): Speed at which the emoji 'falls'. Defaults to 5.
+        animation_length (Union[int, str], optional): Length of the animation. Defaults to "infinite".
+    """
 
 #model = pickle.load('nlp.plk')
 #model = joblib.load('text_clf_model.joblib')
