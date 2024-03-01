@@ -47,6 +47,7 @@ if st.button('Predict'):
 
 progress_bar = col2.progress(0)
 for  perc_completed in range(25):
-    progress_bar.progress(perc_completed)
+    time.sleep()
+    progress_bar.progress(perc_completed+1)
     
 bar = st.progress(25)
