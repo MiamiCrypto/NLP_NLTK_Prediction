@@ -26,8 +26,6 @@ def predict_text_with_score(model, text):
 
 # Streamlit user interface
 st.markdown("<h1 style='text-align: center;'>This Application Predicts What the Text is About</h1>", unsafe_allow_html=True)
-#st.title('Text Prediction App')
-#st.image("Thinking Brain.png", caption='Flight by machines heavier than air is unpractical and insignificant, if not utterly impossible.', width=250)
 
 # Center the image by adjusting the weights of the columns
 # Increase the weight of the center column if necessary
@@ -38,10 +36,6 @@ with col2:
 st.write("Make sure the text is not too short. Models often need a certain amount of context to make accurate predictions.")
 
 col3.metric(label="Temperature", value="60 °C", delta="3 °C")
-
-#with col1:
-    #st.color_picker("Pick a color")
-#st.write("Most objects") # df, err, func, keras!
              
 # User input text area
 user_input = st.text_area("Enter text here:")
@@ -49,7 +43,7 @@ if st.button('Predict'):
         # Create a progress bar and fill it as the prediction is being made
     with st.empty():
         for percent_complete in range(100):
-            time.sleep(0.05)  # Sleep for a short moment to simulate work being done
+            time.sleep(0.25)  # Sleep for a short moment to simulate work being done
             st.progress(percent_complete + 1)
     prediction, scores = predict_text_with_score(model, user_input)
     st.write("Predicted class:", prediction)
