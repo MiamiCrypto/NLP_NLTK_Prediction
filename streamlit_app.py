@@ -11,7 +11,7 @@ with open('nlp.pkl', 'rb') as file:
 
 #st.color_picker("Pick a color")
 #st.area_chart(df)
-st.bar_chart(df)
+#st.bar_chart(df)
 #st.line_chart(df)
 #st.map(df)
 #st.scatter_chart(df)
