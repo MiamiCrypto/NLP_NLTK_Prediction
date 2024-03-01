@@ -43,7 +43,7 @@ from typing import Union
 
 import streamlit as st
 
-from .. import extra
+from streamlit import extra
 
 
 @extra
