@@ -27,7 +27,7 @@ st.markdown("<h1 style='text-align: center;'>Text Prediction App</h1>", unsafe_a
 col1, col2, col3 = st.columns([1, 1, 1])
 with col2:
     st.image("Thinking Brain.png", caption='Flight by machines heavier than air is unpractical and insignificant, if not utterly impossible.', width=250)
-    st.write("Note to self: Make sure the text is not too short. Models often need a certain amount of context to make accurate predictions.")
+    st.write("Note to self: Make sure the text is not too short. Models often need a certain amount of context to make accurate predictions.", width=1000)
 #st.write("Most objects") # df, err, func, keras!
              
 # User input text area
