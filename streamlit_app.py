@@ -1,5 +1,6 @@
 import streamlit as st
 import pickle
+import streamlit_extras
 
 # Load the model
 # Load the model from a pickle file
