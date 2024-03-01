@@ -55,10 +55,11 @@ progress_bar_placeholder = st.empty()
 
 # When the 'Predict' button is pressed
 if st.button('Predict'):
-    # Start the progress bar
-progress_bar = col2.progress(0)
+    progress_bar = col2.progress(0)
 for  perc_completed in range(100):
     time.sleep(0.25)
     progress_bar.progress(perc_completed+1)
+    # Start the progress bar
+
     
 #bar = st.progress(25)
