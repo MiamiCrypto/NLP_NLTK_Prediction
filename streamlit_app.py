@@ -46,19 +46,34 @@ col3.metric(label="Temperature", value="60 °C", delta="3 °C")
 # User input text area
 user_input = st.text_area("Enter text here:")
 if st.button('Predict'):
+        # Create a progress bar and fill it as the prediction is being made
+    with st.empty():
+        for percent_complete in range(100):
+            time.sleep(0.05)  # Sleep for a short moment to simulate work being done
+            st.progress(percent_complete + 1)
     prediction, scores = predict_text_with_score(model, user_input)
     st.write("Predicted class:", prediction)
     st.write("Probability Scores:", scores)
 
-# Create a placeholder for the progress bar
-progress_bar_placeholder = st.empty()
 
 # When the 'Predict' button is pressed
 if st.button('Predict'):
-    progress_bar = col2.progress(0)
-        for  perc_completed in range(100):
-        time.sleep(0.25)
-        progress_bar.progress(perc_completed+1)
+    # Create a progress bar and fill it as the prediction is being made
+    with st.empty():
+        for percent_complete in range(100):
+            time.sleep(0.05)  # Sleep for a short moment to simulate work being done
+            st.progress(percent_complete + 1)
+
+# Create a placeholder for the progress bar
+#progress_bar_placeholder = st.empty()
+
+# When the 'Predict' button is pressed
+#if st.button('Predict'):
+
+#progress_bar = col2.progress(0)
+#for  perc_completed in range(100):
+   # time.sleep(0.25)
+    #progress_bar.progress(perc_completed+1)
     # Start the progress bar
 
     
