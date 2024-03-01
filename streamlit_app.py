@@ -37,7 +37,9 @@ with col2:
     
 st.write("Make sure the text is not too short. Models often need a certain amount of context to make accurate predictions.")
 
-with col1:
+col3.metric(label="Temperature", value="60 *C", delta="3 *C")
+
+#with col1:
     st.color_picker("Pick a color")
 #st.write("Most objects") # df, err, func, keras!
              
