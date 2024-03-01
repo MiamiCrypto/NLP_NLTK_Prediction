@@ -1,5 +1,6 @@
 import streamlit as st
 import pickle
+import time 
 
 # Load the model
 # Load the model from a pickle file
@@ -47,7 +48,7 @@ if st.button('Predict'):
 
 progress_bar = col2.progress(0)
 for  perc_completed in range(25):
-    time.sleep()
+    time.sleep(0.5)
     progress_bar.progress(perc_completed+1)
     
 bar = st.progress(25)
