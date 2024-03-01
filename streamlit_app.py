@@ -44,4 +44,4 @@ if st.button('Predict'):
     prediction, scores = predict_text_with_score(model, user_input)
     st.write("Predicted class:", prediction)
     st.write("Probability Scores:", scores)
-bar = st.progress(50)
+bar = st.progress(25)
