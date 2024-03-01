@@ -50,6 +50,12 @@ if st.button('Predict'):
     st.write("Predicted class:", prediction)
     st.write("Probability Scores:", scores)
 
+# Create a placeholder for the progress bar
+progress_bar_placeholder = st.empty()
+
+# When the 'Predict' button is pressed
+if st.button('Predict'):
+    # Start the progress bar
 progress_bar = col2.progress(0)
 for  perc_completed in range(100):
     time.sleep(0.25)
