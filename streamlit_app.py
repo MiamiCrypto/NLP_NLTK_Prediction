@@ -35,4 +35,4 @@ if st.button('Predict'):
     st.write("Predicted class:", prediction)
     st.write("Probability Scores:", scores)
 
->>> bar = st.progress(50)
+bar = st.progress(50)
