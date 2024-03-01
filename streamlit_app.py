@@ -27,7 +27,8 @@ st.markdown("<h1 style='text-align: center;'>Text Prediction App</h1>", unsafe_a
 col1, col2, col3 = st.columns([1, 1, 1])
 with col2:
     st.image("Thinking Brain.png", caption='Flight by machines heavier than air is unpractical and insignificant, if not utterly impossible.', width=250)
-    #st.write("Note to self: Make sure the text is not too short. Models often need a certain amount of context to make accurate predictions."
+    st.write("Note to self: Make sure the text is not too short. Models often need a certain amount of context to make accurate predictions.")
+#st.write("Most objects") # df, err, func, keras!
              
 # User input text area
 user_input = st.text_area("Enter text here:")
@@ -35,5 +36,4 @@ if st.button('Predict'):
     prediction, scores = predict_text_with_score(model, user_input)
     st.write("Predicted class:", prediction)
     st.write("Probability Scores:", scores)
-
-#bar = st.progress(50)
+bar = st.progress(50)
