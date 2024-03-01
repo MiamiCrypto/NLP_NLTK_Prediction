@@ -50,7 +50,7 @@ if st.button('Predict'):
     st.write("Predicted class:", prediction)
     st.write("Probability Scores:", scores)
 
-progress_bar = user_input.progress(0)
+progress_bar = predict.progress(0)
 for  perc_completed in range(100):
     time.sleep(0.25)
     progress_bar.progress(perc_completed+1)
